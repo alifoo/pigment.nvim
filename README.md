@@ -44,11 +44,11 @@ require('lualine').setup {
 ```
 
 ## Reference for the main theme
-The Hull House maps are a collection of sociological maps that visually documented the poverty, demographics, and labor conditions of Chicago's Near West Side during the Gilded Age.
+The [Hull House maps](http://www.encyclopedia.chicagohistory.org/pages/410008.html) are a collection of sociological maps that visually documented the poverty, demographics, and labor conditions of Chicago's Near West Side during the Gilded Age.
 
 The project consisted principally of two sets of large, full-color maps that covered the same geographic area (the 19th Ward of Chicago). This colorscheme main theme is based on the Nationalities map. shown below.
 
-[Hull House Nationality Map](https://morphocode.com/wp-content/uploads/2017/02/morphocode-hull-haouse-map-nationality-2.jpg)
+![NationalityMap](https://morphocode.com/wp-content/uploads/2017/02/morphocode-hull-haouse-map-nationality-2.jpg)
 
 You can read more about it [here](http://www.encyclopedia.chicagohistory.org/pages/410008.html).
 
