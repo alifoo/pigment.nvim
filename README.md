@@ -29,6 +29,14 @@ Using [oil.nvim](https://github.com/stevearc/oil.nvim):
 }
 ```
 
+## Alacritty theme
+You can also use this theme in your terminal if you use Alacritty. You simply have to clone the repository and move the themes/pigment.toml file into a folder (typically the same folder as your alacritty.toml config) and import it there.
+```toml
+import = [
+    "themes/pigment.toml"
+]
+```
+
 ## Status line support
 
 Pigment supports both Mini.statusline and Lualine. For mini.statusline, you don't need to configure anything.
