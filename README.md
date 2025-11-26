@@ -4,7 +4,8 @@ A warm, naturalist colorscheme for Neovim, inspired by the historical Hull House
 
 [![pigment.png](https://i.postimg.cc/rp2LJJzr/pigment.png)](https://postimg.cc/VJgTsXqf)
 
-With Oil.nvim:
+Using [oil.nvim](https://github.com/stevearc/oil.nvim):
+
 [![oil.png](https://i.postimg.cc/JnyvCHs9/oil.png)](https://postimg.cc/r0kQSmCJ)
 
 ## Requirements
