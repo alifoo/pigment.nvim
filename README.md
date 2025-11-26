@@ -1,6 +1,6 @@
 # pigment.nvim
 
-A warm, naturalist colorscheme for Neovim, inspired by the historical Hull House Maps (1895) and vintage cartography.
+A warm, naturalist colorscheme for Neovim/Alacritty, inspired by the historical Hull House Maps (1895) and vintage cartography.
 
 [![pigment.png](https://i.postimg.cc/rp2LJJzr/pigment.png)](https://postimg.cc/VJgTsXqf)
 
