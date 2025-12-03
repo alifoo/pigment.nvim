@@ -15,7 +15,7 @@ Using [oil.nvim](https://github.com/stevearc/oil.nvim):
     * `dark`: A low-contrast dark mode using the same accent palette.
     * `canvas`: A high-contrast light mode with a pure white background.
 * **Native Support:** Automatic support for `mini.statusline` and treesitter.
-* **Extras:** Includes themes for Lualine and Alacritty.
+* **Extras:** Includes themes for Lualine, Alacritty (Vintage and Canvas) and Tmux (Canvas).
 
 ## Requirements
 
