@@ -1,7 +1,14 @@
 local M = {}
 
-local palette = require("pigment.palette")
-local colors = palette.colors
+local palettes = require("pigment.palette").themes
+
+local config = {
+	theme = "vintage",
+}
+
+function M.setup(opts)
+	config = vim.tbl_extend("force", config, opts or {})
+end
 
 function M.colorscheme()
 	vim.cmd("highlight clear")
@@ -10,10 +17,15 @@ function M.colorscheme()
 	end
 
 	vim.o.termguicolors = true
-
-	vim.o.background = "light"
 	vim.g.colors_name = "pigment"
 
+	if config.theme == "dark" then
+		vim.o.background = "dark"
+	else
+		vim.o.background = "light"
+	end
+
+	local colors = palette(config.theme) or palettes.vintage
 	local set = vim.api.nvim_set_hl
 
 	-- Canvas
@@ -46,7 +58,7 @@ function M.colorscheme()
 	set(0, "Character", { link = "String" })
 
 	-- Functions
-	set(0, "Function", { fg = colors.english_teal, bold = true })
+	set(0, "Function", { fg = colors.italian_sky, bold = true })
 
 	-- Statements
 	set(0, "Statement", { fg = colors.polish_red, bold = true })
@@ -88,7 +100,7 @@ function M.colorscheme()
 	-- mini.statusline theme
 
 	-- Mode Colors
-	set(0, "MiniStatuslineModeNormal", { fg = colors.english_white, bg = colors.english_teal, bold = true })
+	set(0, "MiniStatuslineModeNormal", { fg = colors.english_white, bg = colors.italian_sky, bold = true })
 	set(0, "MiniStatuslineModeInsert", { fg = colors.english_white, bg = colors.irish_green, bold = true })
 	set(0, "MiniStatuslineModeVisual", { fg = colors.english_white, bg = colors.italian_sky, bold = true })
 	set(0, "MiniStatuslineModeReplace", { fg = colors.english_white, bg = colors.russian_red, bold = true })

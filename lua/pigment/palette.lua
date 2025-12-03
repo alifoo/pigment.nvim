@@ -25,4 +25,31 @@ M.colors = {
 	english_white = "#FCEDDA",
 }
 
+M.themes = {
+	vintage = vim.tbl_extend("force", accents, {
+		paper = "#D7C99B",
+		paper_light = "#EDE1BB",
+		paper_dim = "#C5B88A",
+		ink = "#2B2B2B",
+		ink_light = "#585858",
+	}),
+	dark = vim.tbl_extend("force", accents, {
+		paper = "#1E1E2E",
+		paper_light = "#2D2D3F",
+		paper_dim = "#181825",
+		ink = "#CDD6F4",
+		ink_light = "#9399B2",
+
+		english_teal = "#89DCEB",
+		polish_red = "#F38BA8",
+	}),
+	stark = vim.tbl_extend("force", accents, {
+		paper = "#FFFFFF",
+		paper_light = "#F2F2F2",
+		paper_dim = "#E6E6E6",
+		ink = "#111111",
+		ink_light = "#666666",
+	}),
+}
+
 return M
