@@ -39,7 +39,7 @@ M.themes = {
 		english_teal = "#89DCEB",
 		polish_red = "#F38BA8",
 	}),
-	stark = vim.tbl_extend("force", accents, {
+	canvas = vim.tbl_extend("force", accents, {
 		paper = "#FFFFFF",
 		paper_light = "#F2F2F2",
 		paper_ultra_light = "#FAFAFA",

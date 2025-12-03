@@ -8,6 +8,15 @@ Using [oil.nvim](https://github.com/stevearc/oil.nvim):
 
 [![oil.png](https://i.postimg.cc/JnyvCHs9/oil.png)](https://postimg.cc/r0kQSmCJ)
 
+## Features
+
+* **Three Modes:**
+    * `vintage` (Default): The classic Hull House warm paper look.
+    * `dark`: A low-contrast dark mode using the same accent palette.
+    * `canvas`: A high-contrast light mode with a pure white background.
+* **Native Support:** Automatic support for `mini.statusline` and treesitter.
+* **Extras:** Includes themes for Lualine and Alacritty.
+
 ## Requirements
 
 * Neovim >= 0.8.0
@@ -20,12 +29,16 @@ Using [oil.nvim](https://github.com/stevearc/oil.nvim):
 
 ```lua
 {
-  "alifoo/pigment.nvim",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    require("pigment.init").colorscheme()
-  end,
+    "alifoo/pigment.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+        -- Optional: Setup to choose a theme (vintage, dark, or canvas)
+        require("pigment.init").setup({ theme = "vintage" })
+
+        -- Load the colorscheme
+        require("pigment.init").colorscheme()
+    end,
 }
 ```
 
@@ -45,8 +58,8 @@ If you prefer Lualine, this plugin exports a dedicated theme table. You just nee
 ```lua
 require('lualine').setup {
   options = {
-    -- Point to the internal pigment theme
-    theme = require('pigment.lualine').theme 
+    -- Use "vintage", "dark", or "canvas" to match your editor theme
+    theme = require('pigment.lualine').get_theme("vintage") 
   }
 }
 ```
