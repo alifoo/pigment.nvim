@@ -1,1 +1,1 @@
-require("pigment.init").colorscheme()
+require("pigment").colorscheme()
